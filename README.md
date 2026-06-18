@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
                Architecture of Kubernetes:
  What is Kubernetes and Why is it Used?
@@ -88,3 +89,6 @@ Controll Manager
 CCM(Cloud Control Manager)
                    Control Plane                                Data Plane
                               Fig. Kubernetes Architecture.
+=======
+# Kubernetes_Architecture
+>>>>>>> dc217ead3a9f3d8676dd99e28be8c72e2c353a25
