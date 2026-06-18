@@ -16,7 +16,7 @@ b) Scheduler
 c) ETCD
 d) Controller Manager
 e) CCM (Cloud Controller Manager)
- a) API Server:
+a) API Server:
 The API Server is generally used to perform actions received from the external world.
 When a user tries to access an application using an IP address, the API Server receives the request, validates it, and performs the required action. It acts as the entry point for all communications within the Kubernetes cluster.
 b) Scheduler:
