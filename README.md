@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
                Architecture of Kubernetes:
  What is Kubernetes and Why is it Used?
@@ -17,17 +17,16 @@ b) Scheduler
 c) ETCD
 d) Controller Manager
 e) CCM (Cloud Controller Manager)
-a) API Server:
-The API Server is generally used to perform actions received from the external world.
+a) API Server:The API Server is generally used to perform actions received from the external world.
 When a user tries to access an application using an IP address, the API Server receives the request, validates it, and performs the required action. It acts as the entry point for all communications within the Kubernetes cluster.
-b) Scheduler:
-The Scheduler is responsible for deciding on which Pod/Container a request should be executed based on the available resources and requirements.
+
+b) Scheduler:The Scheduler is responsible for deciding on which Pod/Container a request should be executed based on the available resources and requirements.
 It schedules workloads to the appropriate Worker Node after receiving information from the API Server.
-c)ETCD: 
-ETCD is used as a backup storage system for the entire cluster.
+
+c)ETCD: ETCD is used as a backup storage system for the entire cluster.
 It is a distributed key-value store that maintains all cluster information, including Kubernetes objects, configurations, and metadata. ETCD acts as the source of truth for the Kubernetes cluster.
-d)Controller Manager:
-Kubernetes has multiple Pods and Controllers. The Controller Manager is responsible for ensuring that all controllers are working properly, running, and healthy.
+
+d)Controller Manager:Kubernetes has multiple Pods and Controllers. The Controller Manager is responsible for ensuring that all controllers are working properly, running, and healthy.
 For example, suppose the ReplicaSet (which is a controller) is configured with a replica count of 3 in the YAML file. When the cluster is created, Kubernetes ensures that 3 Pods are always running.
 If one of the Pods goes down or gets deleted, the ReplicaSet automatically creates a new Pod through the Controller Manager to maintain the desired state specified in the YAML file.
 In short, the Controller Manager continuously compares the actual state with the desired state and takes corrective actions whenever required.
@@ -57,6 +56,7 @@ It is responsible for:
 * Managing network rules and routing.
 * Updating IP tables whenever Pods are created or deleted.
 Kube-Proxy helps ensure that requests are routed correctly to the appropriate Pods.
+
 c)Container Runtime:
 To run containers in a Kubernetes cluster, a Container Runtime is required.
 Examples include:
@@ -79,16 +79,4 @@ Summary: A Kubernetes cluster consists of:
 
 Together, these components help Kubernetes provide features such as Auto Healing, Auto Scaling, Load Balancing, and efficient management of containerized applications.
  
-Kubelet
-Kube-proxy
-Container Run Time
-API Server
-Scheduler
-ETCD
-Controll Manager
-CCM(Cloud Control Manager)
-                   Control Plane                                Data Plane
-                              Fig. Kubernetes Architecture.
-=======
-# Kubernetes_Architecture
->>>>>>> dc217ead3a9f3d8676dd99e28be8c72e2c353a25
+
